@@ -49,7 +49,7 @@
       // Your JavaScript goes here
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-      const guesses = document.querySelector("guesses");
+      const guesses = document.querySelector(".guesses");
       const lastResult = document.querySelector(".lastResult");
       const lowOrHi = document.querySelector(".lowOrHi");
 
@@ -58,6 +58,7 @@
 
       let guessCount = 1;
       let resetButton;
+      guessField.focus();
 
       function checkGuess() {
         let userGuess = Number(guessField.value);
@@ -88,6 +89,8 @@
         guessField.value = "";
         guessField.focus();
       }
+
+      guessSubmit.addEventListener("click", checkGuess);
 
       function setGameOver() {
         guessField.disabled = true;
