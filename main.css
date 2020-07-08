@@ -36,3 +36,27 @@ ul li{
   border-radius: 15%;
   border: 1px solid white;
 }
+
+.horizontal-scroll-wrapper {
+  width: 300px;
+  height: 50vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(60px);
+  padding-top: 300px;
+}
+
+.horizontal-scroll-wrapper > div {
+padding-top:50px ;
+  width: 300px;
+  height: 300px;
+  transform-origin: right top;
+  transform: rotate(90deg);
+  text-align: center;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
