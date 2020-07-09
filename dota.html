@@ -1,86 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="navbar">
-    <ul>
-      <li><a href="#">profile</a></li>
-      <li>/</li>
-      <li><a href="#">stats</a></li>
-      <li>/</li>
-      <li><a href="#">teammates</a></li>
-      <li>/</li>
-      <li><a href="#">trophies</a></li>
-      <li>/</li>
-      <li><a href="#">tickets</a></li>
-    </ul>
-  </div>
-  <div class="info1">
-    <img src="./images/profile_pic.jpg" alt="profile picture">
-    <h3>ANTI-MAGE</h3>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dota.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">profile</a></li>
+        <li>/</li>
+        <li><a href="#">stats</a></li>
+        <li>/</li>
+        <li><a href="#">teammates</a></li>
+        <li>/</li>
+        <li><a href="#">trophies</a></li>
+        <li>/</li>
+        <li><a href="#">tickets</a></li>
+      </ul>
+    </div>
+    <div class="info1">
+      <img src="./images/profile_pic.jpg" alt="profile picture" />
+      <h3>ANTI-MAGE</h3>
+    </div>
 
-  <div>
-    <h1>legacy dota models vs dota 2 models</h1>
-  </div>
+    <div>
+      <h1>legacy dota models vs dota 2 models</h1>
+    </div>
 
-  <div hidden>
-    <ol>
-      <li>
-        <h5>Earthshaker</h5>
-        <img src="./images/heros/dota2/earthshaker_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Anti-Mage</h5>
-        <img src="./images/heros/dota2/antimage_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Vengeful Spirit</h5>
-        <img src="./images/heros/dota2/vengefulspirit_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Juggernaut</h5>
-        <img src="./images/heros/dota2/juggernaut_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Kunkka</h5>
-        <img src="./images/heros/dota2/kunkka_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Lina</h5>
-        <img src="./images/heros/dota2/lina_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Mirana</h5>
-        <img src="./images/heros/dota2/mirana_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Shadow Shaman</h5>
-        <img src="./images/heros/dota2/shadow_shaman_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Sven</h5>
-        <img src="./images/heros/dota2/sven_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Tiny</h5>
-        <img src="./images/heros/dota2/tiny_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Tinker</h5>
-        <img src="./images/heros/dota2/tinker_full.png" alt="earthshaker">
-      </li>
-      <li>
-        <h5>Zeus</h5>
-        <img src="./images/heros/dota2/zuus_full.png" alt="earthshaker">
-      </li>
-    </ol>
-  </div>
+    <div class="hero_filter">
+      <p>filter by alphabet:</p>
+      <div class="filter_list"></div>
+    </div>
 
-</body>
+    <div class="hero_container">
+      <table class="hero_table">
+        <tr>
+          <th>dota1</th>
+          <th>dota2</th>
+        </tr>
+      </table>
+      <br />
+      <br />
+    </div>
+
+    <script src="dota.js"></script>
+  </body>
 </html>
