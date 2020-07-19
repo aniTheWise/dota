@@ -161,8 +161,13 @@ function addHero(hero, destination, version) {
     let img_path = ".\\images\\heros\\" + version + "\\" + hero + ".png";
     img_element["src"] = img_path;
     img_element.classList = "zoom";
+    img_element.addEventListener("click", () => {
+        console.log(document.querySelector(".hero-gif").style.background);
+        console.log(document.querySelector(".hero-gif").__proto__);
+    });
     img_container["width"] = 100;
-    // img_container["height"] = 100;
+    // img_container.style.display = "flex";
+    img_container["height"] = 100;
     // img_element["width"]= 100;
     img_container.appendChild(img_element);
     destination.appendChild(img_container);
