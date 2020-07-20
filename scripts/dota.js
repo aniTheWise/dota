@@ -162,8 +162,11 @@ function addHero(hero, destination, version) {
     img_element["src"] = img_path;
     img_element.classList = "zoom";
     img_element.addEventListener("click", () => {
-        console.log(document.querySelector(".hero-gif").style.background);
-        console.log(document.querySelector(".hero-gif").__proto__);
+        console.log("url('.\\images\\models\\dota1\\" + hero + ".png')");
+        document.querySelector(".sentinel-model").style.backgroundImage = "url('./images/models/dota1/" + hero + ".png')";
+
+        // document.querySelector(".radiant-model").style.backgroundImage = "url('./images/models/dota1/earthshaker.png')";
+        document.querySelector(".radiant-model").style.backgroundImage = "url('./images/models/dota2/" + hero + ".png')";
     });
     img_container["width"] = 100;
     // img_container.style.display = "flex";
