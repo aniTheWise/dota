@@ -115,47 +115,47 @@ let dir_int = document.querySelector(".intelligence-red .dire");
 
 
 sentinel_strength.forEach(hero => {
-    addHero(hero, sen_str, "dota1")
+    addHero(hero, sen_str, "dota1", "str-sen")
 });
 radiant_strength.forEach(hero => {
-    addHero(hero, rad_str, "dota2")
+    addHero(hero, rad_str, "dota2", "str-rad")
 });
 scourge_strength.forEach(hero => {
-    addHero(hero, sco_str, "dota1")
+    addHero(hero, sco_str, "dota1", "str-sco")
 });
 dire_strength.forEach(hero => {
-    addHero(hero, dir_str, "dota2")
+    addHero(hero, dir_str, "dota2", "str-dir")
 });
 
 sentinel_agility.forEach(hero => {
-    addHero(hero, sen_agi, "dota1")
+    addHero(hero, sen_agi, "dota1", "agi-sen")
 });
 radiant_agility.forEach(hero => {
-    addHero(hero, rad_agi, "dota2")
+    addHero(hero, rad_agi, "dota2", "agi-rad")
 });
 scourge_agility.forEach(hero => {
-    addHero(hero, sco_agi, "dota1")
+    addHero(hero, sco_agi, "dota1", "agi-sco")
 });
 dire_agility.forEach(hero => {
-    addHero(hero, dir_agi, "dota2")
+    addHero(hero, dir_agi, "dota2", "agi-dir")
 });
 
 sentinel_intelligence.forEach(hero => {
-    addHero(hero, sen_int, "dota1")
+    addHero(hero, sen_int, "dota1", "int-sen")
 });
 radiant_intelligence.forEach(hero => {
-    addHero(hero, rad_int, "dota2")
+    addHero(hero, rad_int, "dota2", "int-rad")
 });
 scourge_intelligence.forEach(hero => {
-    addHero(hero, sco_int, "dota1")
+    addHero(hero, sco_int, "dota1", "int-sco")
 });
 dire_intelligence.forEach(hero => {
-    addHero(hero, dir_int, "dota2")
+    addHero(hero, dir_int, "dota2", "int-dir")
 });
 
 
 
-function addHero(hero, destination, version) {
+function addHero(hero, destination, version, gif_dest) {
     let img_container = document.createElement("div");
     let img_element = document.createElement("img");
     let img_path = ".\\images\\heros\\" + version + "\\" + hero + ".png";
@@ -163,10 +163,8 @@ function addHero(hero, destination, version) {
     img_element.classList = "zoom";
     img_element.addEventListener("click", () => {
         console.log("url('.\\images\\models\\dota1\\" + hero + ".png')");
-        document.querySelector(".sentinel-model").style.backgroundImage = "url('./images/models/dota1/" + hero + ".png')";
-
-        // document.querySelector(".radiant-model").style.backgroundImage = "url('./images/models/dota1/earthshaker.png')";
-        document.querySelector(".radiant-model").style.backgroundImage = "url('./images/models/dota2/" + hero + ".png')";
+        document.querySelector("." + gif_dest).style.backgroundImage = "url('./images/models/" + version + "/" + hero + ".gif')";
+        // document.querySelector(".hero-gif").style.backgroundImage = "url('./images/models/dota2/" + hero + ".gif')";
     });
     img_container["width"] = 100;
     // img_container.style.display = "flex";

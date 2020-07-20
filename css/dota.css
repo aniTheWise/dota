@@ -89,11 +89,10 @@ td {
   /* background: rgb(202, 185, 185); */
   align-self: center;
   border-radius: 20px;
-  background: url("../images/models/dota2/earthshaker.png");
+  /* background: url("../images/models/dota2/earthshaker.png"); */
   background-position: center center;
-  /* background-size: cover; */
+  background-size: cover;
 }
-
 
 div > img {
   width: 100px;
