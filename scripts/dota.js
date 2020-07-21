@@ -162,7 +162,7 @@ function addHero(hero, destination, version, gif_dest) {
     img_element["src"] = img_path;
     img_element.classList = "zoom";
     img_element.addEventListener("click", () => {
-        console.log("url('.\\images\\models\\dota1\\" + hero + ".png')");
+        // console.log("url('.\\images\\models\\dota1\\" + hero + ".png')");
         document.querySelector("." + gif_dest).style.backgroundImage = "url('./images/models/" + version + "/" + hero + ".gif')";
         // document.querySelector(".hero-gif").style.backgroundImage = "url('./images/models/dota2/" + hero + ".gif')";
     });

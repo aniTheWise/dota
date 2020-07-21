@@ -71,25 +71,27 @@ td {
 .all-pick {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 .hero-team {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .hero-group {
-  flex-wrap: wrap;
   display: flex;
-  min-width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 100px;
   max-width: 400px;
 }
 .hero-gif {
   min-width: 250px;
   height: 450px;
   border: 2px solid rgb(206, 201, 201);
-  /* background: rgb(202, 185, 185); */
+  /* background: rgb(15, 16, 71); */
   align-self: center;
   border-radius: 20px;
-  /* background: url("../images/models/dota2/earthshaker.png"); */
+  background-image: url("../images/tenor.gif");
   background-position: center center;
   background-size: cover;
 }
@@ -99,7 +101,7 @@ div > img {
   margin: 0;
 }
 
-header {
+.heading {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -115,4 +117,55 @@ header {
   transform: scale(
     1.7
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* ############################################################## */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10%;
+}
+.nav-ul {
+  list-style: none;
+  justify-content: space-evenly;
+}
+.nav-ul-items {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav-ul-items a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-ul-items a:hover {
+  color: rgb(28, 162, 224);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/dota_logo.svg");
+  transition: all 0.2s;
+}
+
+button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  padding: 9px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(28, 162, 224, 1);
+}
+button:hover {
+  background-color: rgba(28, 162, 224, 0.7);
+}
+.logo:hover {
+  background: url("../images/dota_logo_2.svg");
 }
